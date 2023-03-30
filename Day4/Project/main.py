@@ -1,3 +1,5 @@
+from random import randit
+
 rock = '''
     _______
 ---'   ____)
@@ -24,11 +26,11 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-choice_option = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors")
-if choice_option == "0":
-    choice = rock
-elif choice_option == "1":
-    choice = paper
-else:
-    choice = scissors
+game_images = [paper, scissors, rock]
+choice_option = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors"))
+print(game_images[choice_option])
+
+computer_choice = randit(0,2)
+
+
 
