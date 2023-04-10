@@ -1,5 +1,6 @@
 from random import choice
 
+
 word_list = ["aardvark", "baboon", "camel"]
 chosen_word = choice(word_list)
 display = []
